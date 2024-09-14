@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%  static  'css/main.css' %}">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    
+    {% include 'header.html' %}
+    <section class="body">
+        <div class="container">
+                <!-- 1 -->
+                <div id="first" class="pannel">
+                    <div id="text" class="pannel-item">
+                        <div class="caption">
+                            <p>Qulon</p>
+                            <hr>
+                        </div>
+        
+                        <div class="description">
+                            jigetay (lotincha: Equus hemionus) — otlar oilasiga mansub tur. Tashqi tomondan, u eshakka juda oʻxshaydi, lekin ot bilan juda koʻp umumiy xususiyatlarga ega, shuning uchun qulon koʻpincha yarim eshak deb ataladi. Tur nomining oʻzi lotincha boʻlib hemionus  - qadimgi yunon tilidan ἡμίονος, tom ma’noda "yarim eshak", ya’ni xachir yoki eshak. Qulon hech qachon afrikalik eshakdan farqli ravishda xonakilashtirilmagan deb qaraladi.
+                        </div>
+                    </div>
+        
+        
+                    <div id="image-first" class="pannelitem" style="background-image: url('{% static 'img/yovvoyi/one.jpg' %}');">
+                        <div class="triangle-right"></div>
+                    
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div id="second" class="pannel">
+                    <div id="image-second" class="pannelitem" style="background-image: url('{% static 'img/yovvoyi/two.jpg' %}');">
+                        <div class="triangle-left"></div>
+                    </div>
+        
+                    <div id="text" class="pannel-item">
+                        <div class="caption">
+                            <p>Yoʻrgʻa tuvaloq</p>
+                            <hr>
+                        </div>
+        
+                        <div class="description">
+                            Shtuvaloqsimonlar oilasiga mansub qushlarning bir turi. Vazni 1,1 kg dan 2,4 kg gacha; qanoti 350–450 mm. Boʻynida uzun patlardan iborat „yoqa“ boʻlishi bilan boshqa tuvaloqlardan farq qiladi. Patlari sargʻish qum rangida, boshqarish patlarida qoramtir qoʻngʻir koʻndalang yoʻllarining boʻlishi uni choʻl sharoitida yirtqichlardan pana qiladi.</div>
+        
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div id="first" class="pannel">
+                    <div id="text" class="pannel-item">
+                        <div class="caption">
+                            <p>Turkman Qulon
+                            </p>
+                            <hr>
+                        </div>
+        
+                        <div class="description">
+                            Qo‘riqxona hududiga qo‘yib yuborilgan qulonlar qo‘riqxona xodimlari tomonidan yashash joylari va tarzi doimiy monitoring qilib boriladi.
+        Ma’lumot uchun, turkman quloni tekisliklar, past-baland cho‘llar va yarim cho‘llar, tog‘ etaklarida yashaydi. Ular boshoqli ekinlar, shuvoq, sho‘ra kabi o‘simliklar bilan oziqlanadi. Ular O‘zbekistonning Qizil kitobiga kiritilgan.</div>
+                    </div>
+        
+        
+                    <div id="image-first" class="pannelitem" style="background-image: url('{% static 'img/yovvoyi/three.jpg' %}');">
+                    <div class="triangle-right"></div>
+        
+                    </div>
+                </div>
+        
+                <!-- 2 -->
+                <div id="second" class="pannel">
+                    <div id="image-second" class="pannelitem" style="background-image: url('{% static 'img/yovvoyi/four.jpg' %}');">
+                        <div class="triangle-left"></div>
+        
+                    </div>
+        
+                    <div id="text" class="pannel-item">
+                        <div class="caption">
+                            <p>Baday to'qay</p>
+                            <hr>
+                        </div>
+        
+                        <div class="description">
+                            1Amudaryo deltasida tabiiy to‘qayzorlarni himoya qilish, qayta tiklash va ulardan oqilona foydalanish maqsadida “Baday to‘qay” davlat qo‘riqxonasi bazasida “Quyi Amudaryo davlat biosfera rezervati” tashkil etildi.
+                        </div>
+        
+                    </div>
+                </div>
+        </div>
+        {% include 'footer.html' %}
+    </section>
+    <script src="../app.js"></script>
+
+</body>
+
+</html>

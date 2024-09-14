@@ -1,0 +1,76 @@
+{% load static %}
+
+{% block header %}
+<header id="main-header">
+    <div class="container">
+        <a href="#" class="logo__Wrapper">
+            <img src="{% static  'img/nlogo.png' %}" alt="Karakalpakistan">
+        </a>
+        <div class="ham__Wrapper">
+            <img src="{% static 'img/hamburger.svg' %}" alt="===">
+        </div>
+        <div class="nav__Wrapper">
+            <ul>
+                <li class="li"><a href="{% url 'index' %}">Bosh sahifa
+                </a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Asosiy
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="{% url 'index' %}#hudud"> Hududlar </a>
+                        <a href="{% url 'index' %}#mashgulotlar">Mashg'ulotlar
+                        </a>
+                        <a href="{% url 'index' %}#QQR">QQR Tur</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Biz haqimizda
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#"> BIZNING JAMOA </a>
+                        
+                        <a href="#">HAMKORLARIMIZ</a>
+                    </div>
+                </li>
+
+                <!-- <li class="li"><a href="#hudud">
+                    </a></li> -->
+
+                    
+
+                <!-- <li class="li"><a href="#">Mashg'ulotlar</a></li>
+                <li class="li"><a href="#">Xaridlar</a></li> -->
+                <!-- <li class="li"><a href="./registerPage/index.html">Ro'yxatdan o'tish</a></li> -->
+                <li class="dropdown">
+                    <button class="dropbtn">Xizmatlar
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">BRON QILISH</a>
+                        <a href="#">TRANSPORT</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Qo'llanmalar
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">MASLAHATLAR</a>
+                        <a href="#"> KITOB VA JURNALLAR
+                        </a>
+                        <a href="#">STATISTIKA
+                        </a>
+                    </div>
+                </li>
+                <li class="li register"><a href="{% url 'register' %}"><img src="{% static  'img/register.svg' %}" alt=""></a></li>
+                <!-- <li id="openModalBtn" class="li shopping"><a href="#"><img src="./img/shopping.svg" alt=""></a></li> -->
+                
+                
+            </ul>
+        </div>
+
+    </div>
+</header>
+{% endblock  %}

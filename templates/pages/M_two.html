@@ -1,0 +1,121 @@
+<!DOCTYPE html>{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%  static  'css/main.css' %}">
+
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+  {% include 'header.html' %}
+
+
+    <section class="body">
+      <div class="container">
+              <!-- 1 -->
+              <div id="first" class="pannel">
+                <div id="text" class="pannel-item">
+                  <div class="caption">
+                    <p>Gurtik (qoraqalpoq tilida: gúrtik) </p>
+                    <hr>
+                  </div>
+                  
+                  <div class="description">
+                    qoraqalpoq oshxonasiga oid milliy taom. Bu taom asosan toʻrtburchak qilib olingan xamir hamda qaynatilgan goʻshtni bir-biriga qoʻshib tayyorlanadi.
+                  </div>
+                </div>
+                
+                
+                <div id="image-first" class="pannelitem" style="background-image: url('{% static 'img/food/one.jpg' %}');">
+                <div class="triangle-right"></div>
+    
+                </div> 
+              </div>
+            <!-- 2 -->
+              <div id="second" class="pannel">
+                <div id="image-second" class="pannelitem" style="background-image: url('{% static 'img/food/two.jpg' %}');">
+                  <div class="triangle-left"></div>
+    
+                </div> 
+                
+                <div id="text" class="pannel-item">
+                  <div class="caption">
+                    <p>Beshbarmoq</p><hr>
+                  </div>
+                  
+                  <div class="description">
+                    Qoraqalpoq milliy oshxonasida ko’pincha un va yormadan tayyorlangan taomlardan tashkil topgan. Ularning orasida jugar unidan tayyorlangan go’shtli uzma hamir- beshbarmoq mashhurdir. Uning hamiri jugar uni, tuz va qaynatilgan suvdan qoriladi. So’ng, hamirni uzunchoq shaklda kesib chiqiladi va unda barmoqlarning shakli aks etadi. Keyin, uni go’shtli bulyonda qaynatiladi. Tayyor hamir uzmalarining ustiga go’sht va piyozli souv qo’shiladi.
+                  </div>
+                  
+                </div>
+              </div>
+            <!-- 3 -->
+              <div id="first" class="pannel">
+                <div id="text" class="pannel-item">
+                  <div class="caption">
+                    <p>Baursak
+                    </p>
+                    <hr>
+                  </div>
+                  
+                  <div class="description">
+                    Bug’doy unidan nonlar yopishadi. Katta tovoqda hamirni aralashtirib, uni o’qlovda yoyiladi. Ana shu hamirning o’zidan  ingichka qilib yoyilgan va mayda kesilgan to’rtburchak  hamir bo’laklari-baursak deb ataladi.
+                  </div>
+                </div>
+                
+                
+                <div id="image-first" class="pannelitem" style="background-image: url('{% static 'img/food/three.jpg' %}');">
+                <div class="triangle-right"></div>
+    
+                </div> 
+              </div>
+            <!-- 4 -->
+              <div id="second" class="pannel">
+                <div id="image-second" class="pannelitem" style="background-image: url('{% static 'img/food/four.jpg' %}');">
+                  <div class="triangle-left"></div>
+    
+                </div> 
+                
+                <div id="text" class="pannel-item">
+                  <div class="caption">
+                    <p>Ak saulak
+                    </p><hr>
+                  </div>
+                  
+                  <div class="description">
+                    tayyorlash uchun, bug’doy unidan qilingan hamir juda nozik katta non qilib yoyiladi va qizib turgan qozonda pishiriladi. Nonlarni qatiq yoki sariyo’g bilan tortiladi. As saulak bayramlar oldindan tayyorlab, quritib qo’yilib, bayram kunlarida bulyon va go’shtli taomlarga qo’shiladi.
+                  </div>
+                  
+                </div>
+              </div>
+            <!-- 5 -->
+              <div id="first" class="pannel">
+                <div id="text" class="pannel-item">
+                  <div class="caption">
+                    <p>Mayek borek </p>
+                    <hr>
+                  </div>
+                  
+                  <div class="description">
+                    Qoraqalpoqlarning yana bir mashhur taomi mayek borek  hisoblanadi. Yoyilgan hamirni kvadrat shaklda kesib chiqilib, convert shakliga keltirilib, uning ichiga ko’pirtirilgan tuxum va eritilgan yog’ qo’shiladi. Qozonda piyozni qovurilib, uning ustiga suv quyiladi. Quv qaynashi bilan, mayek borek ni qaynatiladi.
+                  </div>
+                </div>
+                
+                
+                <div id="image-first" class="pannelitem" style="background-image: url('{% static 'img/food/five.jpg' %}');">
+                <div class="triangle-right"></div>
+    
+                </div> 
+              </div>
+      </div>
+      {% include 'footer.html' %}
+
+    </section>
+<script src="../app.js"></script>
+      
+</body>
+</html>

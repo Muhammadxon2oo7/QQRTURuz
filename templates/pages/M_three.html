@@ -1,0 +1,84 @@
+<!DOCTYPE html>{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%  static  'css/main.css' %}">
+
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+  {% include 'header.html' %}
+
+
+    <section class="body">
+      <div class="container">
+              <!-- 1 -->
+              <div id="first" class="pannel">
+                <div id="text" class="pannel-item">
+                  <div class="caption">
+                    <p>I.V.Savitskiy nomidagi Qoraqalpog‘iston davlat san'at muzeyi  </p>
+                    <hr>
+                  </div>
+                  
+                  <div class="description">
+                    respublikadagi yirik muzeylardan; Nukus shahrida 1966 yilda tashkil topgan, 1984 yildan N.V.Savitskiy nomi bilan ataladi. Muzeyga I.Savitskiyning sa'y-harakati va u to‘plagan qoraqalpoq xalq amaliy san'ati asarlari negizida asos solingan. Muzeyning umumiy maydoni 6,9 ming kv.m. Muzey xalq amaliy san'ati, qadimiy va o‘rta asrlar Xorazm san'ati, 1920-30-yillar o‘zbek va rus tasviriy san'ati, qoraqalpoq zamonaviy rang-tasviri va haykaltaroshligi, ilmiy-ma'rifiy bo‘limlar, kutubxona (10 ming dona asar), fond hamda ta'mirlash usta-xonasiga ega. Fondida 85 mingdan ortiq eksponat mavjud (2004).
+    
+                  </div>
+                </div>
+                
+                
+                <div id="image-first" class="pannelitem" style="background-image:url('{% static 'img/museum/one.jpg' %}');">
+                <div class="triangle-right"></div>
+    
+                </div> 
+              </div>
+            <!-- 2 -->
+              <div id="second" class="pannel">
+                <div id="image-second" class="pannelitem" style="background-image: url('{% static 'img/museum/two.jpg' %}');">
+                  <div class="triangle-left"></div>
+    
+                </div> 
+                
+                <div id="text" class="pannel-item">
+                  <div class="caption">
+                    <p>Qoraqalpog‘iston o‘lkashunoslik muzeyi</p><hr>
+                  </div>
+                  
+                  <div class="description">
+                    (hozirgi nomi Qoraqalpog'iston Respublikasi Tarixi va Madaniyati muzeyi) nafaqat Amudaryoning quyi oqimi va Orol dengizi, balki butun O‘rta Osiyodagi eng qadimiy ilmiy-ta’lim muassasalaridan biri hisoblanadi.Qoraqalpogʻiston Respublikasi tarixi va madaniyati davlat muzeyining koʻrgazmasi ilk marotaba 1929-yil Qoraqalpogʻiston Respublikasining birinchi poytaxti Toʻrtkoʻl shahrida tashkil etildi.
+                  </div>
+                  
+                </div>
+              </div>
+            <!-- 3 -->
+              <div id="first" class="pannel">
+                <div id="text" class="pannel-item">
+                  <div class="caption">
+                    <p>Shomurotovlar uy-muzeyi 
+                    </p>
+                    <hr>
+                  </div>
+                  
+                  <div class="description">
+                    1999-yil (baʼzi manbalarda 1998-yil)da Qoraqalpogʻiston Respublikasining Nukus shahrida ochilgan uy-muzey. Amet va Oyimxon Shomuratovalarning xususiy uy-muzeyi sifatida ochilgan muzeyda ularning faoliyatiga bilan bogʻliq qimmatli eksponatlar saqlanadi. Uy-muzeyga Amet va Oyimxon Shomurotovalarning qizi Oyimgul Shomurotova rahbarlik qilib keladi.
+                  </div>
+                </div>
+                
+                
+                <div id="image-first" class="pannelitem" style="background-image: url('{% static 'img/museum/three.jpg' %}');">
+                <div class="triangle-right"></div>
+    
+                </div> 
+              </div>
+      </div>
+      {% include 'footer.html' %}
+
+    </section>
+<script src="../app.js"></script>
+      
+</body>
+</html>

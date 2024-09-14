@@ -1,0 +1,39 @@
+{% block footer %}
+{% load static %}
+<footer id="footer">
+        <div class="col col1">
+            <h3>Karakalpakistan</h3>
+            <p>Jamoa E-investment <code>MCHJ</code> </p>
+            <div class="social">
+                <a href="#" target="_blank" class="link"><img src="{% static 'img/icons/telegram.png' %}" alt="" /></a>
+                <a href="#" target="_blank" class="link"><img src="{% static 'img/icons/instagram.png'%} " alt="" /></a>
+                <a href="#" target="_blank" class="link"><img src="{% static 'img/icons/facebook.png'%}" alt="" /></a>
+            </div>
+            <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
+        </div>
+        <div class="col col2">
+            <p><a href="{% url 'index' %}">Bosh sahifa
+                </a></p>
+
+            <p>
+                <a href="{% url 'index' %}#hudud"> Hududlar </a>
+
+            </p>
+            <p>
+                <a href="{% url 'index' %}#mashgulotlar">Mashg'ulotlar
+                </a>
+            </p>
+            <p>
+                <a href="{% url 'index' %}#QQR">QQR Tur</a>
+
+            </p>
+        </div>
+        <div class="col col3">
+            <p>Biz Xaqimizda</p>
+            <p>Xizmatlar</p>
+            <p>Qo'llanmalar</p>
+            <p>Yangiliklar</p>
+        </div>
+        <div class="backdrop"></div>
+</footer>
+{% endblock %}

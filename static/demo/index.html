@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Image Carousel on Hover</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+.images img.active {
+  opacity: 1;
+}
+.card {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.images {
+  display: flex;
+  transition: transform 0.5s ease;
+  transform: translateX(0);
+  width: calc(300px * 3); /* Uchta rasm uchun misol */
+}
+
+.images img {
+  width: 300px;
+  height: 100%;
+  flex-shrink: 0;
+}
+</style>
+<body>
+<div class="card">
+  <div class="images">
+    <img src="./imgs/image1.jpeg" alt="Image 1" class="active">
+    <img src="./imgs/image2.jpeg" alt="Image 2">
+    <img src="./imgs/image3.jpeg" alt="Image 3">
+    <img src="./imgs/image4.jpeg" alt="Image 4">
+    <img src="./imgs/image3.jpeg" alt="Image 3">
+    <img src="./imgs/image2.jpeg" alt="Image 2">
+  </div>
+  <h2>Title of the Card</h2>
+</div>
+<script >
+document.addEventListener('DOMContentLoaded', function() {
+  const imagesContainer = document.querySelector('.images');
+  const images = document.querySelectorAll('.images img');
+  let currentIndex = 0;
+
+  document.querySelector('.card').addEventListener('mouseenter', function() {
+    const maxIndex = images.length - 1;
+    const interval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      imagesContainer.style.transform = `translateX(-${currentIndex * 300}px)`;
+      if (currentIndex === maxIndex) {
+        clearInterval(interval);
+      }
+    }, 2000); // Har 2 sekundda keyingi rasimga o'tish
+  });
+
+  document.querySelector('.card').addEventListener('mouseleave', function() {
+    currentIndex = 0;
+    imagesContainer.style.transform = 'translateX(0)';
+  });
+});
+
+</script>
+</body>
+</html>

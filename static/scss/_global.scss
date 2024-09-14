@@ -1,0 +1,306 @@
+*,*::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background-color: orange;
+    color: #fff;
+}
+body{
+    font-family: "Nunito", sans-serif;
+    background-color: #D1E9F6;
+}
+.fixed {
+    position: fixed; /* Qolgan bo‘limlarga o'tganda header fixed bo‘ladi */
+    top: 0;
+    background-color:#9BBAD3 ;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+     /* Agar rang o'zgartirish kerak bo'lsa */
+  }
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1440px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+}
+.map-container[data-v-17075ea1] {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.map-container svg[data-v-17075ea1] {
+    cursor: pointer;
+    stroke: #081f27;
+    stroke-width: .5px;
+    -webkit-filter: drop-shadow(3px 3px 2px rgba(8,31,39,.7));
+    filter: drop-shadow(3px 3px 2px rgba(8,31,39,.7))
+}
+
+.map-container svg path[data-v-17075ea1] {
+    fill: #1d728e;
+    transition: all .3s ease-in-out
+}
+
+.map-container svg path[data-v-17075ea1]:hover {
+    fill: #35bfdc
+}
+
+.map-container .path[data-v-17075ea1] {
+    position: relative
+}
+
+.map-container .tooltip[data-v-17075ea1] {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 9999
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    position: relative;
+    top: 100px;
+    .carousel-content {
+        display: flex;
+        white-space: nowrap;
+        animation: scroll 10s linear infinite;
+    }
+    
+    .carousel-item {
+        padding: 15px;
+        font-size: 20px;
+        color: #333;
+    }
+}
+
+
+
+
+
+.carousel-container-top {
+    width: 100%;
+    // height: 100px;
+    overflow: hidden;
+    background-color: #f1f1f104;
+    position: absolute;
+    bottom:10px;
+    z-index: 1;
+    .carousel-content {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        white-space: nowrap;
+        animation: scroll 30s linear infinite;
+    }
+    
+    .carousel-item {
+        width:150px;
+        height: 100px;
+        padding: 15px;
+        font-size: 20px;
+        color: #333;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        img{
+            width: 150px;
+            height: 100px;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media only screen and (min-width:1000px){
+    .carousel-container-top {
+        width: 100%;
+        // height: 100px;
+        overflow: hidden;
+        background-color: #f1f1f104;
+        position: absolute;
+        bottom:10px;
+        z-index: 1;
+        .carousel-content {
+            width: 100%;
+            display: flex;
+            gap: 15px;
+            white-space: nowrap;
+            animation: scroll 30s linear infinite;
+        }
+        
+        .carousel-item {
+            width:250px;
+            height: 150px;
+            padding: 15px;
+            font-size: 20px;
+            color: #333;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            img{
+                width: 250px;
+                height: 150px;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }   
+}
+
+
+
+
+
+:root {
+    --m: 4rem;
+  }
+
+  button {
+    background-color: #000;
+    font-size: calc(0.4 * var(--m));
+    border: none;
+    color: #e5e5e5;
+    font-family: "IBM Plex Sans";
+    font-weight: 400;
+    padding: calc(0.35 * var(--m)) calc(0.8 * var(--m));
+    border-radius: calc(0.3 * var(--m));
+  }
+  
+  footer {
+
+    z-index: 500;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 5rem 2vw;
+    position: relative;
+    background-color: #9BBAD3;
+    color: #fff;
+  }
+  
+//   footer::before {
+//     content: "";
+//     position: absolute;
+//     inset: 0;
+//     background: linear-gradient(
+//       rgba(0, 0, 0, 0) 5%,
+//       rgba(0, 0, 0, 0.3) 20%,
+//       rgba(0, 0, 0, 0.6) 30%,
+//       rgba(0, 0, 0, 0.8) 40%,
+//       rgba(0, 0, 0, 1) 50%,
+//       rgb(0, 0, 0)
+//     );
+//     z-index: -7;
+//   }
+  
+//   .backdrop {
+//     z-index: -5;
+//     position: absolute;
+//     inset: 0;
+  
+//     backdrop-filter: blur(40px);
+//     -webkit-backdrop-filter: blur(40px);
+  
+//     mask-image: linear-gradient(
+//       rgba(0, 0, 0, 0),
+//       rgba(0, 0, 0, 0.5) 10%,
+//       rgba(0, 0, 0, 0.8) 20%,
+//       rgba(0, 0, 0, 1) 30%,
+//       rgb(0, 0, 0)
+//     );
+  
+//     -webkit-mask-image: linear-gradient(
+//       rgba(0, 0, 0, 0),
+//       rgba(0, 0, 0, 0.5) 10%,
+//       rgba(0, 0, 0, 0.8) 20%,
+//       rgba(0, 0, 0, 1) 30%,
+//       rgb(0, 0, 0)
+//     );
+//   }
+  
+  .col {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: calc(0.3 * var(--m)) calc(0.8 * var(--m));
+    width: 28%;
+  }
+  
+  .col2,
+  .col3 {
+    background-color: #8fb9db;
+    border-radius: calc(0.5 * var(--m));
+  }
+  
+  img {
+    height: calc(0.3 * var(--m));
+    object-fit: cover;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .link {
+    width: calc(0.8 * var(--m));
+    height: calc(0.8 * var(--m));
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: calc(0.1 * var(--m));
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    :root {
+      --m: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    footer {
+      flex-direction: column-reverse;
+      padding: 5rem 20vw;
+    }
+    .col {
+      width: 100%;
+    }
+    .col2,.col3{
+        margin-bottom: 10px;
+    }
+  }
+  

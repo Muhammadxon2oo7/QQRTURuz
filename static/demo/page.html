@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dynamic Info Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="elements">
+  <button class="info-button" data-id="1">Element 1</button>
+  <button class="info-button" data-id="2">Element 2</button>
+  <button class="info-button" data-id="3">Element 3</button>
+
+  <!-- Qolgan elementlar ham shunday qo'shiladi -->
+</div>
+<div id="info-display"></div>
+<script >
+document.querySelectorAll('.info-button').forEach(button => {
+  button.addEventListener('click', function() {
+    const elementId = this.getAttribute('data-id');
+    fetchElementInfo(elementId);
+  });
+});
+
+function fetchElementInfo(id) {
+  // Bu yerda siz serverdan ma'lumot olishni so'rashingiz kerak, hozircha statik ma'lumotlardan foydalanamiz.
+  const infoData = {
+    1: "Bu Element 1 haqida ma'lumot. U juda qiziqarli va foydali.",
+    2: "Bu Element 2 haqida ma'lumot. Uning xususiyatlari keng qamrovli."
+    // Qolgan elementlar uchun ma'lumotlar
+  };
+
+  const display = document.getElementById('info-display');
+  display.textContent = infoData[id] || "Ma'lumot topilmadi.";
+}
+
+</script>
+</body>
+</html>

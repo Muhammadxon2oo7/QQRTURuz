@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verify Email</title>
+</head>
+<body>
+    <h2>Enter Verification Code</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="verification_code">Tasdiqlash kodi:</label>
+        <input type="text" name="verification_code" required>
+        <button type="submit">Tasdiqlash</button>
+    </form>
+    
+    {% if error %}
+    <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html> 

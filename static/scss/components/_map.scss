@@ -1,0 +1,158 @@
+.map {
+    width: 100%;
+    padding-top: 100px;
+
+    .container {
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+
+            h2 {
+                width: 100%;
+                text-align: center;
+                font-weight: 500;
+                font-size: 32px;
+            }
+        }
+
+        .map__Wrapper {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+
+            gap: 15px;
+
+            .svg__Wrapper{
+                
+                svg {
+                    // display: block;
+                    height: 100%;
+                    background-color: #ebebeb;
+    
+                    -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+                    -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+                    box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+                    border: solid 1px #cbc9c9;
+                    height: 100%;
+                }
+            }
+
+            .panel {
+                width: 100%;
+                // height: 700px;
+                display: flex;
+                flex-wrap: wrap;
+                background-color: #ebebeb;
+                -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+                -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+                box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+                border: solid 1px #cbc9c9;
+
+                img {
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 12px;
+                    margin-bottom: 10px;
+                }
+
+                .pointer__image {
+                    display: block;
+                    width: 100%;
+                    height: 150px;
+                    // height: 300px;
+                }
+
+                .title {
+                    color: gray;
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 32px;
+                }
+
+            }
+
+            
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .map {
+        height: auto;
+        .container {
+            height: auto;
+            .title {
+                h2 {
+                font-family: "Nunito", sans-serif;
+                text-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+
+                    font-size: 72px;
+                    color: #fff;
+                }
+            }
+
+            .map__Wrapper {
+                // all: unset;
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns:1fr 1fr;
+
+                gap: 15px;
+
+                defs {
+                    display: none;
+                }
+
+                .svg__Wrapper{
+                    
+                    svg {
+                        all: unset;
+                        // display: block;
+                        // height: 100%;
+                        background-color: #ebebeb;
+    
+                        -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+                        -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+                        box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+                        border: solid 1px #cbc9c9;
+                      
+                        z-index: 1;
+                        width: auto;
+                    }
+                }
+
+                .panel {
+                    
+                    // display: flex;
+                    // align-items: start;
+                    background-color: #ebebeb;
+                    -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+                    -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+                    box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+                    border: solid 1px #cbc9c9;
+                    height: auto;
+                    .pointer__image {
+                        margin-bottom: 0;
+                    }
+
+                    .title {
+    font-family: "Nunito", sans-serif;
+
+                        color: #000000;
+                        margin-bottom: 0;
+
+                    }
+
+                    .map-dec {
+                        color: #000000c8;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

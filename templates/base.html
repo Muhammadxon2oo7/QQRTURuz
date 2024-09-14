@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%  static  'css/main.css' %}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="./backend.js"></script>
+    <script src="./card.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    swiper-container {
+        width: 100%;
+    }
+
+    .banner {
+        background-image: url('../static/img/river.webp');
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .tooltip {
+        position: absolute;
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: none;
+        /* Hidden by default */
+        z-index: 1000;
+    }
+
+
+    path {
+        fill: #346856;
+        /* Earthy green */
+        stroke: #20432d;
+        /* Darker outline for contrast */
+        transition: fill 0.3s ease;
+        /* Smooth transition for hover effects */
+    }
+
+    svg path {
+        transition: transform 0.3s ease;
+    }
+
+    svg path:hover {
+        z-index: 10000000000;
+        /* transform: scale(1.1); Scale up the path */
+        cursor: pointer;
+        fill: #5a9278;
+
+    }
+
+    .card {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+    }
+</style>
+{% load static %}
+
+<body>
+
+    {% include 'header.html' %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    {% include 'footer.html' %}
+
+    <script src="{% static 'app.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>

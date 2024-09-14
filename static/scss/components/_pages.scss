@@ -1,0 +1,164 @@
+
+.body{
+    width: 100%;
+    padding-top: 100px;
+}
+
+  .pannel {
+    width: 100%;
+    // height: 500px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 15px;
+    // margin-bottom: 15px;
+    // margin-bottom: 40px;
+    overflow: hidden;
+    padding-top: 20px;
+    margin-bottom: 100px;
+  
+  }
+  
+  // #intro {
+  //   height: 350px;
+  // }
+  
+  #first {
+    /* Your styling here */
+  }
+  
+  #second {
+    flex-flow: row wrap-reverse;
+  }
+  
+  .pannel-item {
+    width: 100%;
+    
+  }
+  .pannelitem{
+    width: 100%;
+    position: relative;
+  }
+  
+  #text {
+    height: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  #image-first {
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+  }
+  
+  #image-second {
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+  }
+  
+  /* triangle classes. Equilateral => width=0.866*height. The positioning & negative margins are based on width of visible border to center the triangle between the two columns and not disrupt the flex-flow.  */
+  .triangle-right {
+    position: absolute;
+    width: 0; height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 46px solid #fff;
+    top: 50%;
+    left: 46px;
+    margin-top: -40px;
+    margin-left: -46px;
+    display: none;
+  }
+  
+  .triangle-left {
+    position: absolute;
+    width: 0; height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right: 46px solid #fff;
+    top: 50%;
+    right: 22px;
+    margin-top: -46px; margin-bottom: -46px;
+    display: none;
+  }
+  
+  .caption {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    padding: 0 10%;
+    p{
+        width: 100%;
+        text-align: center;
+    }
+  }
+  
+  .description {
+    width: 90%;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+
+  }
+  
+  hr {
+    width: 20vw;
+    height: 0;
+    border: solid 2px #f90;
+    margin-bottom: 10px;
+  }
+  
+
+  
+@media only screen and (min-width:768px){
+  .pannel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .pannel-item{
+      width: 45%;
+   
+    }
+    #image-first{
+      width: 45%;
+    }
+    #image-second{
+      width: 45%;
+    }
+    .triangle-left{
+      display: block;
+      transform: translateX(50%);
+     
+    }
+    .triangle-right{
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.products{
+    width: 100%;
+    padding-top: 100px;
+    margin: 0;
+    margin-bottom: 100px;
+    .container{
+        width: 100%;
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+            h2{
+                width: 100%;
+                text-align: center;
+                font-weight: 500;
+                
+                @include title();
+                font-size: 24px;
+            }
+        }
+        .productss{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            img{
+                width: 100%;
+                height: 200px;
+            }
+            .card{
+                width: 300px;
+                
+            }
+            .cover-image, .carousel-images{
+                &::before{
+                    width: 100%;
+                    height: 25px;
+                    background-color: #0000006d;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    display: block;
+                    content: 'ssdfasdv';
+                    color: #fff;
+                    text-align: center;
+                }
+                a{
+                    width: 100%;
+                    height:200px;
+                    background-color: red;
+                    
+                    img{
+                        width: 100%;
+                        height: 200px;
+                    }
+                }
+            }
+            .one{
+                .cover-image,.carousel-images{
+                    &::before{
+                        content: 'Qadimiy joylar';
+                    }
+                }
+            }
+            .two{
+                .cover-image,.carousel-images{
+                    &::before{
+                        content: 'Milliy taomlar';
+                    }
+                }
+            }
+            .three{
+                .cover-image,.carousel-images{
+                    &::before{
+                        content: 'Muzeylar';
+                    }
+                }
+            }
+            .four{
+                .cover-image,.carousel-images{
+                    &::before{
+                        content: 'Bayramlar';
+                    }
+                }
+            }
+            .five{
+                .cover-image,.carousel-images{
+                    &::before{
+                        content: 'Shahar Hududlari';
+                    }
+                }
+            }
+            .six{
+                .cover-image,.carousel-images{
+                    &::before{
+                        content: 'Yovvoyi tabiat';
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media only screen and (min-width:768px){
+    .products{
+        .container{
+            .title{
+                width: 415px;
+                // background-color: orange;
+                margin: 0 auto;
+                margin-bottom: 40px;
+                border-radius: 4px;
+                text-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+
+                h2{
+    font-family: "Nunito", sans-serif;
+
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+/* Modal oyna */
+.modal {
+    display: none; /* Boshlanishida ko'rinmas */
+    position: fixed; /* Sahifada ko'chmasdan turishi uchun */
+    z-index: 100; /* Modaldan boshqa elementlar ustida turishi uchun */
+    left: 0;
+    top: 0;
+    width: 100%; /* Butun ekranni qoplash uchun */
+    height: 100%; /* Butun ekranni qoplash uchun */
+    overflow: auto; /* Kerak bo'lganda skroll chiqishi uchun */
+    background-color: rgb(0, 0, 0); /* Orqa fon rangi (qora) */
+    background-color: rgba(0, 0, 0, 0.4); /* Yengilroq qora rang */
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* Sahifaning o'rtasida joylashadi */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Modalning kengligi */
+        .cart-item{
+            background-color: red;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 100px;
+            .img-wrapper{
+                width: 100px;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: dodgerblue;
+            }
+        }
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+}
+
+/* Modal kontent */
+
+
+/* Yopish tugmasi (x) */
+
+

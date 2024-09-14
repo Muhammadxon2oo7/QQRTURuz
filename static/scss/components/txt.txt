@@ -1,0 +1,35 @@
+<!--
+    ClickableMapMaker.com - Clickable map website software
+    Copyright (C) 2021  ClickableMapMaker.com
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/> 
+
+    Source code available at: https://github.com/switchingbits/clickable-map-maker
+-->
+
+<!-- CSS start (put inside <head> tag) -->
+<style>
+.cmm-usa{display:none;margin:0 auto;position:relative;padding:10px}.cmm-usa svg{width:100%;z-index:99}.cmm-usa svg path{stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.cmm-usa-hover-state-info{position:relative;margin:-40px auto 20px auto;display:none;box-sizing:border-box;padding:.75em;width:300px;border-radius:10px;background:#fff;box-shadow:0 0 20px #999;font-size:14px;z-index:100}.cmm-usa-hover-state-info span{display:block;line-height:1.5em}.cmm-usa-hover-state-info span:first-child{font-weight:bold;text-align:center}.cmm-usa-listview{width:100%;text-align:center;margin:1em 0}.cmm-usa-listview ul{vertical-align:top;list-style:none;display:inline-block;text-align:left;margin:0;padding:0}.cmm-usa-listview ul li{padding:0;margin:0}.cmm-usa-listview ul li span{display:inline-block;position:relative;height:12px;width:12px;border-radius:12px;color:black;text-align:center;line-height:12px;font-weight:bold;border:1px solid #999;opacity:1.0;margin-right:.5em}.cmm-usa-listview ul li span::after{content:"\2B9E";position:relative;color:#333;font-size:12px}.cmm-usa-listview ul li a{display:inline-block;margin:.5em 1em .5em 0;color:#ccc;text-decoration:none}.cmm-usa-listview ul li a.cmm-usa-live-link{color:#000;text-decoration:underline;cursor:pointer}.cmm-usa-title{width:100%;text-align:center;font-weight:bold}.cmm-usa-credit-link{text-align:center}
+</style>
+<!-- CSS end -->
+
+<!-- HTML start -->
+
+<!-- HTML end -->
+
+<!-- JS start -->
+<script>
+</script>
+<!-- JS end -->
+<!-- End of clickable map code -->
